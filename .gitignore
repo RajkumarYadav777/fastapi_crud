@@ -1,0 +1,22 @@
+
+
+# pythin cache
+
+__pycache__/
+*.pyc
+*.py[cod]
+
+# venv
+venv/
+# .env
+.env
+.env.*
+
+# db
+*.db
+
+# ide
+.vscode/
+
+# migrations(if auto)
+alembic/versions/
