@@ -6,7 +6,7 @@ from app.core.config import settings
 
 # create FastAPI instance with metadat
 app = FastAPI(
-    titlle=settings.PROJECT_NAME,
+    title=settings.PROJECT_NAME,
     version='1.0.0',
     description='FastAPI simple crud appication'
 )
