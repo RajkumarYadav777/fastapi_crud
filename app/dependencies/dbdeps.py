@@ -6,7 +6,7 @@ from app.db.session import SessionLocal
 
 # dependency to get a SQLAlchemy DB session per request
 
-def get_db()->[Session, None, None]:
+def get_db()-> Generator[Session, None, None]:
     """
     This function is a dependency that provides a database session.
     It ensures:

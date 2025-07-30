@@ -6,12 +6,14 @@ from sqlalchemy.exc import IntegrityError
 from typing import Optional, List
 
 from app.models.user import User
-from app.schemas.user import UserCreate, UserUpdate
+from app.schemas.userschema import UserCreate, UserUpdate
 
-
+# inside each funcion db:Session dont have to provide because we use it inside __init__
+#  the db will availbale for every requst in this class
+# all methods share same init variables
 class UserCRUD:
     def __init__(self, db:Session):
-        self.db = db
+        self.db = db  
 
     
     # retrieve users
